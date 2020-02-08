@@ -105,6 +105,7 @@ button{
   flex-direction: column;
 }
 span{
+  padding-top: .7rem;
   font-size: 1.6rem;
   letter-spacing: 1px;
   font-style: italic;
