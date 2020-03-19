@@ -3,13 +3,13 @@ Simple application that allows you to add and remove posts which are stored in d
 
 ## Getting Started
 
-Install node_modules in main folder with server and client folder with vue app
+Install node_modules in main folder with the server and in vue folder with the app
 ```
 npm install
 ```
 
 In config.js (server/routes/api/config.js) file change path to your own MongoDB Collection.\
-If not familiar with database visit mongoose documentation https://docs.mongodb.com/guides/server/drivers/
+If not familiar with mongo visit official website with documentation https://docs.mongodb.com/guides/server/drivers/
 
 Run the server
 ```
@@ -20,7 +20,7 @@ Jump to the client folder and run the vue app
 ```
 npm run serve
 ```
-Open the app
+Open the app 
 ```
 http://localhost:8080/
 ```
