@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongodb = require('mongodb');
+const config = require('./config');
 
 //Get posts
 router.get('/', async (req, res) => {
@@ -27,7 +28,7 @@ router.delete('/:id', async (req, res)=>{
 
 
 async function loadPostsCollection(){
-    const client = await mongodb.MongoClient.connect('mongodb+srv://admin:lVsO5UG2VAuThwZ3@cluster1-jtajs.mongodb.net/vue?retryWrites=true&w=majority', {
+    const client = await mongodb.MongoClient.connect(config.db, {
         useNewUrlParser: true, 
         useUnifiedTopology: true
     });
